@@ -1,0 +1,9 @@
+{
+  "name": "front-end",
+  "authors": [
+    "Aleksandr Sazhin <i4j5@ya.ru>"
+  ],
+  "description": "",
+  "license": "MIT",
+  "dependencies": {}
+}

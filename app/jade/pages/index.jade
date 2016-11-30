@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="ru")
+head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    title  АДВОКАТ
+
+    //build:css stylesheets/all.css
+    link(rel="stylesheet", href="stylesheets/reset.css")
+    link(rel="stylesheet", href="stylesheets/index.css")
+    //endbuild
+body.page.page_loading
+    .loader
+    .wrapper
+        .card
+            .card__container
+                img(src="data:image/png;base64,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", alt="")
+                .card__title УСЛУГИ <br>АДВОКАТА
+                .card__phone 
+                    span +7 
+                    span (989)  
+                    spam 623-17-90
+                .card__maps с. Чалтырь, ул. 7-я Линия, д. 7A
+    
+    script.
+        window.addEventListener('load', function() { 
+            window.setTimeout(function() {
+                document.body.className = document.body.className.replace(/\bpage_loading\b/, '');
+            }, 100);             
+        });
+    //- //build:js javascripts/all.js
+    //- script(src="javascripts/index.js")
+    //- //endbuild

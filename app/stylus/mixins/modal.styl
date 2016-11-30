@@ -1,0 +1,102 @@
+.modal
+  opacity 0
+  position fixed
+  left 0
+  top 0
+  height 100%
+  width 100%
+  overflow-x hidden
+  overflow-y auto
+  visibility hidden
+  background-color rgba(0, 0, 0, .8)
+  transition opacity 0.3s 0s, visibility 0s 0.3s
+  z-index 1000
+
+  &_is-visible
+    opacity 1
+    visibility visible
+    transition opacity 0.3s 0s, visibility 0s 0s
+
+  &_is-visible>&__container
+    transform translateY(0)
+
+  &__container
+    z-index 1020
+    position relative
+    width 90%
+    max-width 340px
+    min-height 400px
+    margin auto
+    background #e1e1e1
+    margin-top 135px
+    margin-bottom 135px
+    transform translateY(-100px)
+    transition-property transform
+    transition-duration 0.5s
+    border-radius 4px
+    &_view_ok
+      min-height 170px
+
+    &_view_big
+      width auto
+      min-width 650px
+      text-align center
+      margin-top 15px
+      margin-bottom 15px
+      background rgba(255,255,255,0)
+      padding 15px
+      padding-top 30px
+      img
+        max-width 100%
+
+    &_view_confidentiality
+      margin-top 15px
+      margin-bottom 15px
+      padding 15px 20px
+      max-width 900px
+      background #fff
+      color #000
+      font-size 14px
+      line-height 1.5em
+      font-weight normal
+
+  &__title
+    text-align center
+    font-size 24px
+    line-height 1.2em
+    color #000
+    font-weight bold
+    padding-top 45px
+    margin-bottom 20px
+
+  &__text
+    text-align center
+    font-size 14px
+    line-height 1.2em
+    color #333
+    font-weight normal
+    margin-bottom 30px
+
+  &__input
+    width 260px
+    margin auto
+    display table
+    margin-bottom 15px
+
+  &__btn
+    width 260px
+    margin auto
+    display table
+    margin-top 25px
+
+  &__close
+    position absolute
+    top 0px
+    right 0px
+    width 30px
+    height 30px
+    cursor pointer
+    background url("images/close.png") 0px 0px no-repeat
+
+.modal-open
+  overflow hidden
