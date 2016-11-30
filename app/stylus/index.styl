@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700')
 
 .page
-    font-family: 'Roboto Slab', serif;
+    font-family 'Roboto Slab', serif
     font-weight 400
     box-sizing border-box
 
@@ -56,7 +56,7 @@
         transform rotate(360deg)
 
 .card
-    opacity .8
+    opacity .89
     box-sizing border-box
     position relative
     max-width 100%
@@ -94,3 +94,36 @@
         font-size 13px
         line-height 1.1em
         font-weight 700
+        margin-top 10px
+        
+.form
+    margin 30px auto 0px auto
+    
+    &__title
+        text-align center
+        font-size 15px
+        line-height 1.2em
+        font-weight 700
+        margin-bottom 10px
+        
+.input
+    width 170px
+    box-sizing border-box
+    border 1px solid #dbdbdb
+    border-radius 4px
+    color #000
+    font-size 14px
+    padding 9px 8px 7px
+    -webkit-appearance none 
+    outline none 
+
+placeholder = #888
+.input::-webkit-input-placeholder
+    color placeholder
+.input::-moz-placeholder
+    color placeholder
+.input:-moz-placeholder
+    color placeholder
+.input:-ms-input-placeholder
+    color placeholder
+    
