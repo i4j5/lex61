@@ -13,27 +13,62 @@ body.page.page_loading
     .loader
     .wrapper
         .card
-            .card__container
-                img(src="data:image/png;base64,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", alt="")
-                .card__title УСЛУГИ <br>АДВОКАТА
-                .card__phone 
-                    span +7 
-                    span (989)  
-                    spam 623-17-90
-                .card__maps с. Чалтырь, ул. 7-я Линия, д. 7A
-                .hr
-                .form
-                    .form__title Записаться онлайн
-                    input(placeholder="Введите телефон").form__input
-                    .form__btn Записаться
-
-    
+            .card__container#container
+                .card__front
+                    .card__headr
+                        img(src="data:image/png;base64,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", alt="")
+                        .card__title УСЛУГИ <br>АДВОКАТА
+                        .card__phone 
+                            span +7 
+                            span (989)  
+                            spam 623-17-90
+                        .card__maps с. Чалтырь, ул. 7-я Линия, д. 7A
+                    
+                    .card__footer
+                        .form
+                            .form__title Записаться онлайн
+                            input(placeholder="Введите телефон").form__input#phone
+                            .form__btn#btn Записаться
+                .card__back
+                    .card__headr
+                        .card__title.card__title_ok
+                            img(width="90px" src="data:image/png;base64,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")
+                            br
+                            |Ваша заявка принята 
+                        .card__text
+                            |С Вами было приятно работать
+                    .card__footer
+                        .card__phone 
+                            span +7 
+                            span (989)  
+                            spam 623-17-90
+                        .card__maps с. Чалтырь, ул. 7-я Линия, д. 7A
+        
     script.
         window.addEventListener('load', function() { 
             window.setTimeout(function() {
                 document.body.className = document.body.className.replace(/\bpage_loading\b/, '');
             }, 100);             
         });
+
+        var container = document.getElementById('container');
+        var btn = document.getElementById('btn');
+        var phone = document.getElementById('phone');
+
+        btn.addEventListener('click', function() {
+
+            var r = new XMLHttpRequest();
+            r.open('GET', 'https://api.telegram.org/bot328873662:AAHN8_GOBOy4_K2CS1FR4uMAH0xU-FiSXEA/sendMessage?chat_id=125383622&text=' + phone.value, true);
+
+            r.onreadystatechange = function () {
+                if (r.readyState != 4 || r.status != 200) return;
+                container.classList.add('card__container_ok')
+            };
+
+            r.send();
+
+        });
+
     //- //build:js javascripts/all.js
     //- script(src="javascripts/index.js")
     //- //endbuild
