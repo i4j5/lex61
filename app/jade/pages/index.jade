@@ -22,8 +22,8 @@ body.page.page_loading
                         .card__title УСЛУГИ <br>АДВОКАТА
                         .card__phone 
                             span +7 
-                            span (989)  
-                            spam 623-17-90
+                            span (918)  
+                            spam 852-88-86
                         .card__maps с. Чалтырь, ул. 7-я Линия, д. 7A
                     
                     .card__footer
@@ -42,8 +42,8 @@ body.page.page_loading
                     .card__footer
                         .card__phone 
                             span +7 
-                            span (989)  
-                            spam 623-17-90
+                            span (918)  
+                            spam 852-88-86
                         .card__maps с. Чалтырь, ул. 7-я Линия, д. 7A
         
     script.
@@ -60,7 +60,8 @@ body.page.page_loading
         btn.addEventListener('click', function() {
 
             var r = new XMLHttpRequest();
-            r.open('GET', 'https://api.telegram.org/bot328873662:AAHN8_GOBOy4_K2CS1FR4uMAH0xU-FiSXEA/sendMessage?chat_id=125383622&text=' + phone.value, true);
+            // 125383622
+            r.open('GET', 'https://api.telegram.org/bot328873662:AAHN8_GOBOy4_K2CS1FR4uMAH0xU-FiSXEA/sendMessage?chat_id=252170896&text=' + phone.value, true);
 
             r.onreadystatechange = function () {
                 if (r.readyState != 4 || r.status != 200) return;
